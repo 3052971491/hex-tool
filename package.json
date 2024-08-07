@@ -1,0 +1,31 @@
+{
+  "private": true,
+  "version": "0.0.1",
+  "description": "hex-tool",
+  "scripts": {
+    "preinstall": "npx only-allow pnpm",
+    "clean": "rimraf node_modules packages/*/node_modules docs/*/node_modules",
+    "bootstrap": "pnpm install && node scripts/bootstrap.mjs",
+    "release": "node scripts/release.mjs",
+    "build": "pnpm -r --filter=@hex-tool/* build",
+    "docs:build": "pnpm --dir ./docs build:docs",
+    "test:coverage": "pnpm -r --filter=@hex-tool/shared test:coverage"
+  },
+  "keywords": [],
+  "author": "junjieyuan",
+  "license": "MIT",
+  "packageManager": "pnpm@9.1.1",
+  "engines": {
+    "pnpm": ">=9.0"
+  },
+  "devDependencies": {
+    "@varlet/release": "^0.2.11",
+    "eslint": "^9.8.0",
+    "execa": "^9.3.0",
+    "nanospinner": "^1.1.0",
+    "prettier": "^3.3.3",
+    "rimraf": "^6.0.1",
+    "typescript": "^5.5.4",
+    "vite": "^5.3.5"
+  }
+}

@@ -1,0 +1,35 @@
+{
+  "name": "@hex-tool/shared",
+  "version": "0.0.2",
+  "description": "shared utils of hex-tool",
+  "type": "module",
+  "module": "lib/index.js",
+  "main": "lib/index.cjs",
+  "types": "lib/index.d.ts",
+  "sideEffects": false,
+  "exports": {
+    ".": {
+      "import": "./lib/index.js",
+      "require": "./lib/index.cjs",
+      "types": "./lib/index.d.ts"
+    }
+  },
+  "scripts": {
+    "dev": "tsup src/index.ts --format esm --out-dir=lib --watch --dts",
+    "build": "tsup src/index.ts --format esm,cjs --out-dir=lib --dts --clean",
+    "test": "vitest",
+    "test:coverage": "vitest run --coverage"
+  },
+  "keywords": [],
+  "author": "chouchouji",
+  "license": "MIT",
+  "files": [
+    "lib",
+    "tsconfig.json"
+  ],
+  "devDependencies": {
+    "@vitest/coverage-istanbul": "^2.0.5",
+    "tsup": "^8.2.3",
+    "vitest": "^2.0.5"
+  }
+}

@@ -1,1 +1,1 @@
-# hex-tool
+# Hex Tool
