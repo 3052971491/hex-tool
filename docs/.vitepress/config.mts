@@ -16,7 +16,7 @@ export default defineConfig({
     sidebar,
 
     socialLinks: [
-      { icon: 'github', link: 'https://github.com/chouchouji/hex-tool' }
+      { icon: 'github', link: 'https://github.com/3052971491/hex-tool' }
     ]
   }
 })
