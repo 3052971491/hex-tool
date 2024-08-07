@@ -1,6 +1,6 @@
 {
   "name": "@hex-tool/shared",
-  "version": "0.0.2",
+  "version": "0.0.1",
   "description": "shared utils of hex-tool",
   "type": "module",
   "module": "lib/index.js",
@@ -21,7 +21,7 @@
     "test:coverage": "vitest run --coverage"
   },
   "keywords": [],
-  "author": "chouchouji",
+  "author": "junjieyuan",
   "license": "MIT",
   "files": [
     "lib",
