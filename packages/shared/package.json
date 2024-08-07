@@ -1,6 +1,6 @@
 {
-  "name": "@hex-tool/shared",
-  "version": "0.0.1",
+  "name": "@hex-tool/shared",  
+  "version": "0.0.2",
   "description": "shared utils of hex-tool",
   "type": "module",
   "module": "lib/index.js",
